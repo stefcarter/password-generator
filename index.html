@@ -1,57 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Time</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <h1>Password Generator</h1>
-
-    <div class="box">
-        <h2>Generate a Password</h2>
-
-        <hr class="line">
-            <div>
-                <p id="pass" style="text-align:center">Let's Begin</p>
-                <span id="section1" class="hidden" onclick="myFunction()"><p>
-                    <input type="checkbox" id="tenChar">
-                    <label for="defense"> 10 characters</label>
-                    <br />
-                    <input type="checkbox" id="elvenChar">
-                    <label for="defense"> 11 characters</label>
-                    <br>
-                    <input type="checkbox" id="twelveChar">
-                    <label for="defense"> 12 characters</label>
-                    <br>
-                    and
-                    <br>
-                    <input type="checkbox" id="lowCase">
-                    <label for="defense">lowercase</label>
-                    <br>
-                    <input type="checkbox" id="upCase">
-                    <label for="defense">uppercase</label>
-                    <br>
-                    <input type="checkbox" id="Numer">
-                    <label for="defense">numeric</label>
-                    <br>
-                    <input type="checkbox" id="specChar">
-                    <label>special characters</label>
-                    <br>
-                    <br />
-                    <button onclick="myTest()">Generate</button>
-                    </span>
-                    
-                </p>
-                
-            </div>
-
-        <hr class="line">
-        <br />
-        <button id="genpass" onclick="myFunction(); this.style.visibility='hidden'">Generate Password</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="centerIT">Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
     </div>
     <script src="./assets/script.js"></script>
-</body>
+  </body>
 </html>
